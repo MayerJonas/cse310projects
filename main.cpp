@@ -40,7 +40,7 @@ int main() {
         std::cout << arr[i] << " ";
     }
     
-    // std::cout << std::endl; // newline
+    std::cout << std::endl; // newline
 
     delete[] arr; // free up memory
 
