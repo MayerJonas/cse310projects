@@ -23,6 +23,10 @@ int main() {
         return 0;
     }
 
+     if (n <= 0) { // invalid input: n is 0 or negative
+        return 0;
+    }
+
     int* arr = new int[n]; // array holding n elements
 
     for (int i = 0; i < n; ++i) { // reading elements of the array from input
@@ -36,7 +40,7 @@ int main() {
         std::cout << arr[i] << " ";
     }
     
-    std::cout << std::endl; // newline
+    // std::cout << std::endl; // newline
 
     delete[] arr; // free up memory
 
