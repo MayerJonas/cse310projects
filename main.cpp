@@ -20,11 +20,13 @@ int main() {
     int n; // number of elements
     
     if (!(std::cin >> n)) { // read n = number of elements, exit when no input is given
+        std::cout << std::endl; // newline before exit
         return 0;
     }
 
      if (n <= 0) { // invalid input: n is 0 or negative
-        return 0;
+         std::cout << std::endl; // newline before exit
+         return 0;
     }
 
     long long* arr = new long long[n]; // array holding n elements
